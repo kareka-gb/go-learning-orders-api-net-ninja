@@ -3,6 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
+	"os"
+	"os/signal"
 
 	"githbub.com/kareka-gb/orders-api-net-ninja/application"
 )
@@ -10,7 +12,10 @@ import (
 func main() {
 	app := application.NewApp()
 
-	err := app.Start(context.TODO())
+	ctx, cancel := signal.NotifyContext(context.Background(), os.Interrupt)
+	defer cancel()
+
+	err := app.Start(ctx)
 	if err != nil {
 		fmt.Println("FAILED TO START APP:", err)
 	}
