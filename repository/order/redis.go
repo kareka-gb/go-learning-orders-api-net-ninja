@@ -6,7 +6,7 @@ import (
 	"errors"
 	"fmt"
 
-	"githbub.com/kareka-gb/orders-api-net-ninja/model"
+	"github.com/kareka-gb/orders-api-net-ninja/model"
 	"github.com/redis/go-redis/v9"
 )
 

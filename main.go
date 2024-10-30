@@ -6,7 +6,7 @@ import (
 	"os"
 	"os/signal"
 
-	"githbub.com/kareka-gb/orders-api-net-ninja/application"
+	"github.com/kareka-gb/orders-api-net-ninja/application"
 )
 
 func main() {

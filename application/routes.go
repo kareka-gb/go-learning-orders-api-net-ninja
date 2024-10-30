@@ -5,9 +5,9 @@ package application
 import (
 	"net/http"
 
-	"githbub.com/kareka-gb/orders-api-net-ninja/handler"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
+	"github.com/kareka-gb/orders-api-net-ninja/handler"
 )
 
 func loadRoutes() *chi.Mux {
